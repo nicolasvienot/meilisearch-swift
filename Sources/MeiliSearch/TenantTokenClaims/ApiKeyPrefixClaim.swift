@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+  import FoundationNetworking
+#endif
 import JWTKit
 
 internal struct ApiKeyPrefixClaim: JWTClaim, Equatable {

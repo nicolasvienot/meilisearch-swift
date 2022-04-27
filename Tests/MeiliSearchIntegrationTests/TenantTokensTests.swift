@@ -2,6 +2,9 @@
 
 import XCTest
 import Foundation
+#if canImport(FoundationNetworking)
+  import FoundationNetworking
+#endif
 
 class TenantTokensTests: XCTestCase {
   private var client: MeiliSearch!

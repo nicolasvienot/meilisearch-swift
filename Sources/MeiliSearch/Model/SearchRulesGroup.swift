@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+  import FoundationNetworking
+#endif
 
 public struct SearchRulesGroup: Codable, Equatable {
   var members: [SearchRules] = []

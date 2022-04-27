@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+  import FoundationNetworking
+#endif
 
 public struct SearchRules: Codable, Equatable {
   var index: String = "*"
